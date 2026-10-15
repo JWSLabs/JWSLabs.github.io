@@ -4,64 +4,94 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Joe Waves Society (JWS)</title>
- <link rel="stylesheet" href="style.css" />
-  <!-- Google Fonts for Modern Typography -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <meta name="theme-color" content="#252525" />
+  <meta name="description" content="Joe Waves Society builds thoughtful software, full-stack applications, and digital products." />
+  <title>JWS &amp; Digital Craft</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
 </head>
 <body>
-
-  <!-- Hero Section -->
-  <header class="hero">
-    <div class="container">
-      <div class="badge">Joe Waves Society</div>
-      <h1>Where Innovation Meets Engineering.</h1>
-      <p class="hero-text">
-        We specialize in executing end-to-end technical projects, transforming complex ideas into powerful, reliable, and user-friendly digital products.
-      </p>
-      <div class="hero-buttons">
-        <a href="#about" class="btn primary-btn">Explore Projects</a>
-        <a href="#contact" class="btn secondary-btn">Get In Touch</a>
-      </div>
+  <header class="site-header">
+    <div class="container header-content">
+      <a class="brand" href="#top" aria-label="Joe Waves Society home">
+        <span class="brand-mark">JWS</span>
+        <span class="brand-name">Joe Waves Society</span>
+      </a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#capabilities">Capabilities</a>
+        <a class="nav-github" href="https://github.com/JWSLabs">GitHub <span aria-hidden="true">↗</span></a>
+      </nav>
     </div>
   </header>
 
-  <!-- About Section -->
-  <section id="about" class="section">
-    <div class="container">
-      <h2>About JWS</h2>
-      <p class="section-lead">
-        Founded on the belief that code is more than infrastructure—it is an art form—we sit at the intersection of modern design and robust software architecture.
-      </p>
-      
-      <div class="grid">
-        <div class="card">
-          <div class="card-icon">⚡</div>
-          <h3>End-to-End Engineering</h3>
-          <p>From system architecture to production deployment, we build scalable and secure custom software tailored to modern needs.</p>
-        </div>
-        <div class="card">
-          <div class="card-icon">🌊</div>
-          <h3>Full-Stack Applications</h3>
-          <p>We create intuitive, high-performance web and mobile apps that deliver seamless user experiences powered by strong backends.</p>
-        </div>
-        <div class="card">
-          <div class="card-icon">💡</div>
-          <h3>Digital Strategy & R&D</h3>
-          <p>We align technical architecture with vision, prototyping and deploying cutting-edge technologies that keep you ahead.</p>
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero-content">
+        <h1 id="hero-title">Where innovation<br />meets engineering<span class="blue-period">.</span></h1>
+        <p class="hero-copy">We turn complex ideas into powerful, reliable, and thoughtful digital products.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#capabilities">Explore capabilities <span aria-hidden="true">↓</span></a>
+          <a class="button button-text" href="https://github.com/JWSLabs">Visit our GitHub <span aria-hidden="true">↗</span></a>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Footer -->
-  <footer id="contact">
+    <section class="about-section section" id="about">
+      <div class="container about-layout">
+        <div>
+          <h2>Thoughtful by design.<br /><span>Robust by nature.</span></h2>
+        </div>
+        <p class="about-copy">Founded on the belief that code is more than infrastructure; it is an art form. We work at the intersection of modern design and robust software architecture, creating technology that feels as considered as it is capable.</p>
+      </div>
+    </section>
+
+    <section class="capabilities-section section" id="capabilities">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <h2>Built to move ideas forward.</h2>
+          </div>
+          <p class="section-aside">From the first architecture sketch to the details people use every day.</p>
+        </div>
+        <div class="capability-grid">
+          <article class="capability">
+            <h3>Coding</h3>
+            <p>We write reliable, maintainable code for the systems and products people use every day.</p>
+          </article>
+          <article class="capability">
+            <h3>Full-stack applications</h3>
+            <p>We create intuitive, high-performance web and mobile apps with seamless user experiences and strong backends.</p>
+          </article>
+          <article class="capability">
+            <h3>Research &amp; prototyping</h3>
+            <p>We test ideas, explore new technologies, and build prototypes to discover what works best.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="community-section" id="community">
+      <div class="container community-content">
+        <div>
+          <h2>Good work gets<br />better together.</h2>
+        </div>
+        <div class="community-action">
+          <p>Explore what we're building and follow along with the JWS community.</p>
+          <a class="button button-primary" href="https://github.com/JWSLabs">Explore JWS on GitHub <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
     <div class="container footer-content">
-      <p>&copy; Joe Waves Society. All rights reserved.</p>
+      <a class="footer-brand" href="#top">JWS<span>.</span></a>
+      <p>&copy; <span id="copyright-year">2026</span> Joe Waves Society</p>
+      <a href="https://github.com/JWSLabs">GitHub <span aria-hidden="true">↗</span></a>
     </div>
   </footer>
-
 </body>
 </html>
